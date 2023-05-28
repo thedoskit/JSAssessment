@@ -22,6 +22,8 @@ function mintNFT (_name, _eyeColor, _shirtType, _bling ) {
   }
   myNFT.push(NFTMetadata);
 
+  console.log("minted: " + _name);
+
 }
 
 // create a "loop" that will go through an "array" of NFT's
@@ -47,5 +49,7 @@ function getTotalSupply() {
 // call your functions below this line
 mintNFT("Kazeem", "black", "Jacket", "Cuban");
 mintNFT("John", "blue", "Vneck", "Nose-ring");
+mintNFT("Mary", "red", "TankTop", "Diamond ring");
+mintNFT("Jane", "purple", "Leggings", "Gold Chain");
 listNFTs();
 getTotalSupply();
